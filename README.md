@@ -12,6 +12,7 @@
   * Tidak boleh menggunakan fungsi system()
 
 **Contoh: ./program \* 34 7 /home/somi/test.sh**
+
 Program dengan argumen seperti contoh di atas akan menjalankan script test.sh setiap detik pada jam 07:34.
 
 2. Shisoppu mantappu! itulah yang selalu dikatakan Kiwa setiap hari karena sekarang dia merasa sudah jago materi sisop. Karena merasa jago, suatu hari Kiwa iseng membuat sebuah program.
