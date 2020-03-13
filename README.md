@@ -11,7 +11,7 @@
   * Program berjalan di background (daemon)
   * Tidak boleh menggunakan fungsi system()
 
-**Contoh: ./program \* 34 7 /home/somi/test.sh
+**Contoh: ./program \* 34 7 /home/somi/test.sh**
 Program dengan argumen seperti contoh di atas akan menjalankan script test.sh setiap detik pada jam 07:34.
 
 2. Shisoppu mantappu! itulah yang selalu dikatakan Kiwa setiap hari karena sekarang dia merasa sudah jago materi sisop. Karena merasa jago, suatu hari Kiwa iseng membuat sebuah program.
@@ -21,6 +21,7 @@ Program dengan argumen seperti contoh di atas akan menjalankan script test.sh se
   * Karena takut program tersebut lepas kendali, Kiwa ingin program tersebut men- generate sebuah program "killer" **yang siap di run(executable)** untuk menterminasi semua operasi program tersebut. Setelah di run, program yang menterminasi ini lalu akan mendelete dirinya sendiri.
   * Kiwa menambahkan bahwa program **utama** bisa dirun dalam dua mode, yaitu MODE_A dan MODE_B. untuk mengaktifkan MODE_A, program harus dijalankan dengan argumen -a. Untuk MODE_B, program harus dijalankan dengan argumen -b. Ketika dijalankan dalam MODE_A, program utama akan langsung menghentikan semua operasinya ketika program killer dijalankan. Untuk MODE_B, ketika program killer dijalankan, program utama akan berhenti tapi membiarkan proses di setiap folder yang masih berjalan sampai selesai(semua
 folder terisi gambar, terzip lalu di delete). 
+
 Kiwa lalu terbangun dan sedih karena menyadari programnya hanya sebuah mimpi.
 Buatlah program dalam mimpi Kiwa jadi nyata!
 
