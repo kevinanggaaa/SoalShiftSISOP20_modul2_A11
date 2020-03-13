@@ -2,14 +2,15 @@
 
 1. Buatlah program C yang menyerupai crontab untuk menjalankan script bash dengan ketentuan sebagai berikut:
   * Program menerima 4 argumen berupa:
-    ** Detik: 0-59 atau * (any value)
-    ** Menit: 0-59 atau * (any value)
-    ** Jam: 0-23 atau * (any value)
-    ** Path file .sh
+    * Detik: 0-59 atau * (any value)
+    * Menit: 0-59 atau * (any value)
+    * Jam: 0-23 atau * (any value)
+    * Path file .sh
   * Program akan mengeluarkan pesan error jika argumen yang diberikan tidak sesuai
   * Program hanya menerima 1 config cron
   * Program berjalan di background (daemon)
   * Tidak boleh menggunakan fungsi system()
+
 **Contoh: ./program \* 34 7 /home/somi/test.sh
 Program dengan argumen seperti contoh di atas akan menjalankan script test.sh setiap detik pada jam 07:34.
 
@@ -22,9 +23,11 @@ Program dengan argumen seperti contoh di atas akan menjalankan script test.sh se
 folder terisi gambar, terzip lalu di delete). 
 Kiwa lalu terbangun dan sedih karena menyadari programnya hanya sebuah mimpi.
 Buatlah program dalam mimpi Kiwa jadi nyata!
+
 **Catatan:**
 * Tidak boleh memakai system().
 * Program utama harus ter-detach dari terminal
+
 **Hint:**
 * Gunakan fitur picsum.photos untuk mendapatkan gambar dengan ukuran tertentu
 * Epoch Unix bisa didapatkan dari time()
@@ -35,8 +38,10 @@ Buatlah program dalam mimpi Kiwa jadi nyata!
   * Diberilah tugas baru yaitu setelah di ekstrak, hasil dari ekstrakan tersebut (di dalam direktori **“home/[USER]/modul2/jpg/”**) harus dipindahkan sesuai dengan pengelompokan, semua file harus dipindahkan ke **“/home/[USER]/modul2/sedaap/”** dan semua direktori harus dipindahkan ke **“/home/[USER]/modul2/indomie/”**.
   * Untuk setiap direktori yang dipindahkan ke **“/home/[USER]/modul2/indomie/”** harus membuat dua file kosong. File yang pertama diberi nama **“coba1.txt”**, lalu 3 detik kemudian membuat file bernama **“coba2.txt”**.
 (contoh : **“/home/[USER]/modul2/indomie/{nama_folder}/coba1.txt”**).
+
 Karena Jaya terlalu banyak tugas dia jadi stress, jadi bantulah Jaya agar bisa membuat
 program tersebut.
+
 **Catatan :**
 * Tidak boleh memakai system().
 * Tidak boleh memakai function C mkdir() ataupun rename().
