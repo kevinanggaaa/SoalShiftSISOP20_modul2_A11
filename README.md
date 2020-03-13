@@ -1,6 +1,6 @@
 # SoalShiftSISOP20_modul2_A11
 
-1. Buatlah program C yang menyerupai crontab untuk menjalankan script bash dengan ketentuan sebagai berikut:
+##1. Buatlah program C yang menyerupai crontab untuk menjalankan script bash dengan ketentuan sebagai berikut:
   * Program menerima 4 argumen berupa:
     * Detik: 0-59 atau * (any value)
     * Menit: 0-59 atau * (any value)
@@ -15,7 +15,7 @@
 
 Program dengan argumen seperti contoh di atas akan menjalankan script test.sh setiap detik pada jam 07:34.
 
-2. Shisoppu mantappu! itulah yang selalu dikatakan Kiwa setiap hari karena sekarang dia merasa sudah jago materi sisop. Karena merasa jago, suatu hari Kiwa iseng membuat sebuah program.
+##2. Shisoppu mantappu! itulah yang selalu dikatakan Kiwa setiap hari karena sekarang dia merasa sudah jago materi sisop. Karena merasa jago, suatu hari Kiwa iseng membuat sebuah program.
   * Pertama-tama, Kiwa membuat sebuah folder khusus, di dalamnya dia membuat sebuah program C yang per 30 detik membuat sebuah folder dengan nama timestamp [YYYY-mm-dd_HH:ii:ss].
   * Tiap-tiap folder lalu diisi dengan 20 gambar yang di download dari https://picsum.photos/, dimana tiap gambar di download setiap 5 detik. Tiap gambar berbentuk persegi dengan ukuran (t%1000)+100 piksel dimana t adalah detik Epoch Unix. Gambar tersebut diberi nama dengan format timestamp [YYYY-mm-dd_HH:ii:ss].
   * Agar rapi, setelah sebuah folder telah terisi oleh 20 gambar, folder akan di zip dan folder akan di delete(sehingga hanya menyisakan .zip).
@@ -34,7 +34,7 @@ Buatlah program dalam mimpi Kiwa jadi nyata!
 * Gunakan fitur picsum.photos untuk mendapatkan gambar dengan ukuran tertentu
 * Epoch Unix bisa didapatkan dari time()
 
-3. Jaya adalah seorang programmer handal mahasiswa informatika. Suatu hari dia memperoleh tugas yang banyak dan berbeda tetapi harus dikerjakan secara bersamaan (multiprocessing).
+##3. Jaya adalah seorang programmer handal mahasiswa informatika. Suatu hari dia memperoleh tugas yang banyak dan berbeda tetapi harus dikerjakan secara bersamaan (multiprocessing).
   * Program buatan jaya harus bisa membuat dua direktori di **“/home/[USER]/modul2/”**. Direktori yang pertama diberi nama **“indomie”**, lalu lima detik kemudian membuat direktori yang kedua bernama **“sedaap”**.
   * Kemudian program tersebut harus meng-ekstrak file **jpg.zip** di direktori **“/home/[USER]/modul2/”**. Setelah tugas sebelumnya selesai, ternyata tidak hanya itu tugasnya.
   * Diberilah tugas baru yaitu setelah di ekstrak, hasil dari ekstrakan tersebut (di dalam direktori **“home/[USER]/modul2/jpg/”**) harus dipindahkan sesuai dengan pengelompokan, semua file harus dipindahkan ke **“/home/[USER]/modul2/sedaap/”** dan semua direktori harus dipindahkan ke **“/home/[USER]/modul2/indomie/”**.
