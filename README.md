@@ -1,3 +1,7 @@
+
+
+## Kevin Angga Wijaya - 05111840000024
+## Julius - 05111840000082
 # SoalShiftSISOP20_modul2_A11
 
 ## Soal 1
