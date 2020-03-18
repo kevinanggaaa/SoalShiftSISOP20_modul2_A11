@@ -2,7 +2,7 @@
 
 ## Kevin Angga Wijaya - 05111840000024
 ## Julius - 05111840000082
-![GitHub Logo]https://github.com/kevinanggaaa/SoalShiftSISOP20_modul2_A11/blob/master/Run%20as%20admin.png
+![Run as admin](https://user-images.githubusercontent.com/60419316/76970734-e51dd000-695e-11ea-9e0f-e837779ca615.png)
 # SoalShiftSISOP20_modul2_A11
 
 ## Soal 1
