@@ -170,7 +170,7 @@ Jika nilai childnya 0, maka dideklarasikan char `tempString`, lalu deklarasi cha
 
 ## Testing
 Kami mengetes menggunakan file .sh sebagai berikut.  
-
+![image](https://user-images.githubusercontent.com/60419316/77056590-354f6d80-6a05-11ea-99a9-e5520bf7ba87.png)
 ### Detik -1
 ![image](https://user-images.githubusercontent.com/60419316/77044596-4b076780-69f2-11ea-905c-a39902ed4b1f.png)
 ### Menit -1
