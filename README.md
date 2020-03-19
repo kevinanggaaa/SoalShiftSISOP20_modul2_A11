@@ -174,6 +174,7 @@ Kami mengetes menggunakan file .sh sebagai berikut.
 ### Detik -1
 ![image](https://user-images.githubusercontent.com/60419316/77044596-4b076780-69f2-11ea-905c-a39902ed4b1f.png)
 ### Menit -1
+![image](https://user-images.githubusercontent.com/60419316/77044885-ccf79080-69f2-11ea-822f-4c434d494df2.png)
 ### Jam -1
 
 
