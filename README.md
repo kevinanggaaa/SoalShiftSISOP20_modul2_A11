@@ -19,7 +19,7 @@ Buatlah program C yang menyerupai crontab untuk menjalankan script bash dengan k
 
 **Contoh: ./program \* 34 7 /home/somi/test.sh**
 
-Program dengan argumen seperti contoh di atas akan menjalankan script test.sh setiap detik pada jam 07:34.\
+Program dengan argumen seperti contoh di atas akan menjalankan script test.sh setiap detik pada jam 07:34.
 ## Penjelasan Soal 1
 ```
 int main(int argc,char *argv[]) {
@@ -50,7 +50,7 @@ Jika input tidak sama dengan 5, maka print "jumlah input salah\n"
     }
   } 
 ```
-Jika argv[1] sama dengan " * ", maka detik = -1. Selain itu, detik diinput dengan nilai integer basis 10 pada argv[1]. Jika isi dari stringToLongPtr sama dengan argv[1], yang berarti isi argv[1] adalah huruf atapun simbol (selain " * "), maka print "input detik harus integer atau ' * ' \n", lalu proses berhenti. selain itu, jika detik tidak kurang dari sama dengan 59 dan tidka lebih sama dengan 0, maka print "Detik tidak sesuai dengan ketentuan, lebih dari waktu dalam hari\n", lalu proses berhenti.
+  Jika `argv[1]` sama dengan `"*"`, maka `detik = -1`. Selain itu, `detik` diinput dengan nilai integer basis 10 pada `argv[1]`. Jika isi dari `stringToLongPtr` sama dengan `argv[1]`, yang berarti isi `argv[1]` adalah huruf atapun simbol (selain `"*"`), maka print `"input detik harus integer atau ' * ' \n"`, lalu proses berhenti. selain itu, jika `detik` tidak kurang dari sama dengan 59 dan tidak lebih sama dengan 0, maka print `"Detik tidak sesuai dengan ketentuan, lebih dari waktu dalam hari\n"`, lalu proses berhenti.
 
 ```
   if(strcmp(argv[2],"*")==0) {
@@ -66,7 +66,7 @@ Jika argv[1] sama dengan " * ", maka detik = -1. Selain itu, detik diinput denga
     }
   }
 ```
-  Jika `argv[2]` sama dengan `"*"`, maka `detik = -1`. Selain itu, `detik` diinput dengan nilai integer basis 10 pada `argv[2]`. Jika isi dari `stringToLongPtr` sama dengan `argv[2]`, yang berarti isi `argv[2]` adalah huruf atapun simbol (selain `"*"`), maka print `"input detik harus integer atau ' * ' \n"`, lalu proses berhenti. selain itu, jika `detik` tidak kurang dari sama dengan 59 dan tidak lebih sama dengan 0, maka print `"Detik tidak sesuai dengan ketentuan, lebih dari waktu dalam hari\n"`, lalu proses berhenti.
+Jika `argv[2]` sama dengan `"*"`, maka `menit = -1`. Selain itu, `menit` diinput dengan nilai integer basis 10 pada `argv[2]`. Jika isi dari `stringToLongPtr` sama dengan `argv[2]`, yang berarti isi `argv[2]` adalah huruf atapun simbol (selain `"*"`), maka print `"input menit harus integer atau ' * ' \n"`, lalu proses berhenti. selain itu, jika `menit` tidak kurang dari sama dengan 59 dan tidak lebih sama dengan 0, maka print `"menit tidak sesuai dengan ketentuan, lebih dari waktu dalam hari\n"`, lalu proses berhenti.
  
 ```
   if (strcmp(argv[3],"*")==0){
@@ -82,7 +82,7 @@ Jika argv[1] sama dengan " * ", maka detik = -1. Selain itu, detik diinput denga
     }
   }
 ```
-Jika argv[3] sama dengan " * ", maka detik = -1. Selain itu, detik diinput dengan nilai integer basis 10 pada argv[3]. Jika isi dari stringToLongPtr sama dengan argv[3], yang berarti isi argv[3] adalah huruf atapun simbol (selain " * "), maka print "input detik harus integer atau ' * ' \n", lalu proses berhenti. selain itu, jika detik tidak kurang dari sama dengan 59 dan tidka lebih sama dengan 0, maka print "Detik tidak sesuai dengan ketentuan, lebih dari waktu dalam hari\n", lalu proses berhenti.
+Jika `argv[3]` sama dengan `"*"`, maka `jam = -1`. Selain itu, `jam` diinput dengan nilai integer basis 10 pada `argv[3]`. Jika isi dari `stringToLongPtr` sama dengan `argv[3]`, yang berarti isi `argv[3]` adalah huruf atapun simbol (selain `"*"`), maka print `"input jam harus integer atau ' * ' \n"`, lalu proses berhenti. selain itu, jika `jam` tidak kurang dari sama dengan 23 dan tidak lebih sama dengan 0, maka print `"jam tidak sesuai dengan ketentuan, lebih dari waktu dalam hari\n"`, lalu proses berhenti.
 
 ```
   pid_t pid, sid;     
@@ -131,13 +131,13 @@ Menutup File Descriptor Standar
 ```
   signal(SIGCHLD, SIG_IGN);
 ```
-Pengganti fungsi wait
+Pengganti fungsi `wait`
 
 ```
     time_t sk = time(NULL);
     struct tm *sk_tm = localtime(&sk);
 ```
-Mendeklarasikan variabel sk dengan tipe data time_t dan diisi dengan nilai waktu sistem saat program berjalan. Lalu, isi sk diinput ke struct sk_tm dengan format struct tm.
+Mendeklarasikan variabel `sk` dengan tipe data `time_t` dan diisi dengan nilai waktu sistem saat program berjalan. Lalu, isi `sk` diinput ke sebuah struct `sk_tm` dengan format struct `tm`.
 
 ```
     detik_sk = sk_tm->tm_sec;
@@ -145,14 +145,14 @@ Mendeklarasikan variabel sk dengan tipe data time_t dan diisi dengan nilai waktu
     jam_sk = sk_tm->tm_hour;
     printf("jam_sk: %d; menit: %d; detik: %d\n", jam_sk, menit_sk, detik_sk);
 ```
-Mendeklarasikan nilai dari detik_sk, menit_sk, dan jam_sk dengan waktu sistem pada struct sk_tm. Lalu diprint.
+Mendeklarasikan nilai dari `detik_sk`, `menit_sk`, dan `jam_sk` dengan waktu sistem pada struct `sk_tm`. Lalu diprint.
 
 ```
     if((jam_sk == jam || jam == -1) && (menit_sk == menit || menit == -1) && (detik_sk == detik || detik == -1)){
       pid_t child;
       child = fork();
 ```
-Jika (nilai jam yang diinput sama dengan jam sistem atau nilai jam sama dengan -1) dan (nilai menit yang diinput sama dengan menit sistem atau nilai menit sama dengan -1) dan (nilai detik yang diinput sama dengan detik sistem atau nilai detik sama dengan -1), dibuat process child.
+Jika (nilai `jam` yang diinput sama dengan jam sistem atau nilai `jam` sama dengan -1) dan (nilai `menit` yang diinput sama dengan menit sistem atau nilai `menit` sama dengan -1) dan (nilai `detik` yang diinput sama dengan detik sistem atau nilai `detik` sama dengan -1), dibuat process child.
 
 ```
       if (child == 0){
@@ -166,9 +166,9 @@ Jika (nilai jam yang diinput sama dengan jam sistem atau nilai jam sama dengan -
   }
 }
 ```
-Jika nilai childnya 0, maka dideklarasikan char tempString, lalu deklarasi char bashArgv[] yang isinya tempString, lalu dicopy nilai dari argv[4] ke tempString, lalu diexec sehingga ngebash bashArgv. Lalu sistem dijalankan setiap detik.
+Jika nilai childnya 0, maka dideklarasikan char `tempString`, lalu deklarasi char `bashArgv[]` yang isinya `tempString`, lalu dicopy nilai dari `argv[4]` ke `tempString`, lalu diexec sehingga ngebash `bashArgv`. Lalu sistem dijalankan setiap detik.
 
-# Testing
+## Testing
 Kami mengetes menggunakan file .sh sebagai berikut.  
 ![image](https://user-images.githubusercontent.com/60419316/77042863-fe6e5d00-69ee-11ea-9f5e-db4be28fdc0d.png)
 
