@@ -170,13 +170,15 @@ Jika nilai childnya 0, maka dideklarasikan char `tempString`, lalu deklarasi cha
 
 ## Testing
 Kami mengetes menggunakan file .sh sebagai berikut.  
-![image](https://user-images.githubusercontent.com/60419316/77042863-fe6e5d00-69ee-11ea-9f5e-db4be28fdc0d.png)
+
 ### Detik -1
 ![image](https://user-images.githubusercontent.com/60419316/77044596-4b076780-69f2-11ea-905c-a39902ed4b1f.png)
 ### Menit -1
 ![image](https://user-images.githubusercontent.com/60419316/77044885-ccf79080-69f2-11ea-822f-4c434d494df2.png)
 ### Jam -1
 ![image](https://user-images.githubusercontent.com/60419316/77045157-3c6d8000-69f3-11ea-9bb6-f2b8351fffa1.png)
+### Jalan setiap menit pada detik ke 5
+![image](https://user-images.githubusercontent.com/60419316/77056456-020cde80-6a05-11ea-928d-18ac925cb729.png)
 
 
 ## Soal 2
