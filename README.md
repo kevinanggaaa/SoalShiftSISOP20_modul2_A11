@@ -19,14 +19,14 @@ Buatlah program C yang menyerupai crontab untuk menjalankan script bash dengan k
 
 **Contoh: ./program \* 34 7 /home/somi/test.sh**
 
-Program dengan argumen seperti contoh di atas akan menjalankan script test.sh setiap detik pada jam 07:34.
-
+Program dengan argumen seperti contoh di atas akan menjalankan script test.sh setiap detik pada jam 07:34.\
+## Penjelasan Soal 1
 ```
 int main(int argc,char *argv[]) {
   int detik, menit, jam, detik_sk, menit_sk, jam_sk;
   char *stringToLongPtr;
-```
-Pertama - tama, kita harus menginput data yang diperlukan dan mendeklarasikan variabel variabel yang dibutuhkan
+```  
+Pertama - tama, kita harus menginput data yang diperlukan dan mendeklarasikan variabel variabel yang dibutuhkan.
 
 ```
   if (argc != 5) {
@@ -169,7 +169,7 @@ Jika (nilai jam yang diinput sama dengan jam sistem atau nilai jam sama dengan -
 Jika nilai childnya 0, maka dideklarasikan char tempString, lalu deklarasi char bashArgv[] yang isinya tempString, lalu dicopy nilai dari argv[4] ke tempString, lalu diexec sehingga ngebash bashArgv. Lalu sistem dijalankan setiap detik.
 
 # Testing
-Kami mengetes menggunakan file .sh sebagai berikut.
+Kami mengetes menggunakan file .sh sebagai berikut.  
 ![image](https://user-images.githubusercontent.com/60419316/77042863-fe6e5d00-69ee-11ea-9f5e-db4be28fdc0d.png)
 
 
