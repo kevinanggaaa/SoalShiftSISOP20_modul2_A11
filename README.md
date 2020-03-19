@@ -66,7 +66,7 @@ Jika argv[1] sama dengan " * ", maka detik = -1. Selain itu, detik diinput denga
     }
   }
 ```
-  Jika argv[2] sama dengan " * ", maka detik = -1. Selain itu, detik diinput dengan nilai integer basis 10 pada argv[2]. Jika isi dari stringToLongPtr sama dengan argv[2], yang berarti isi argv[2] adalah huruf atapun simbol (selain " * "), maka print "input detik harus integer atau ' * ' \n", lalu proses berhenti. selain itu, jika detik tidak kurang dari sama dengan 59 dan tidka lebih sama dengan 0, maka print "Detik tidak sesuai dengan ketentuan, lebih dari waktu dalam hari\n", lalu proses berhenti.
+  Jika `argv[2]` sama dengan `"*"`, maka `detik = -1`. Selain itu, `detik` diinput dengan nilai integer basis 10 pada `argv[2]`. Jika isi dari `stringToLongPtr` sama dengan `argv[2]`, yang berarti isi `argv[2]` adalah huruf atapun simbol (selain `"*"`), maka print `"input detik harus integer atau ' * ' \n"`, lalu proses berhenti. selain itu, jika `detik` tidak kurang dari sama dengan 59 dan tidak lebih sama dengan 0, maka print `"Detik tidak sesuai dengan ketentuan, lebih dari waktu dalam hari\n"`, lalu proses berhenti.
  
 ```
   if (strcmp(argv[3],"*")==0){
@@ -167,6 +167,11 @@ Jika (nilai jam yang diinput sama dengan jam sistem atau nilai jam sama dengan -
 }
 ```
 Jika nilai childnya 0, maka dideklarasikan char tempString, lalu deklarasi char bashArgv[] yang isinya tempString, lalu dicopy nilai dari argv[4] ke tempString, lalu diexec sehingga ngebash bashArgv. Lalu sistem dijalankan setiap detik.
+
+# Testing
+Kami mengetes menggunakan file .sh sebagai berikut.
+![image](https://user-images.githubusercontent.com/60419316/77042863-fe6e5d00-69ee-11ea-9f5e-db4be28fdc0d.png)
+
 
 ## Soal 2
 Shisoppu mantappu! itulah yang selalu dikatakan Kiwa setiap hari karena sekarang dia merasa sudah jago materi sisop. Karena merasa jago, suatu hari Kiwa iseng membuat sebuah program.
