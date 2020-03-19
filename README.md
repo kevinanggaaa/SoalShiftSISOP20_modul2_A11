@@ -176,6 +176,7 @@ Kami mengetes menggunakan file .sh sebagai berikut.
 ### Menit -1
 ![image](https://user-images.githubusercontent.com/60419316/77044885-ccf79080-69f2-11ea-822f-4c434d494df2.png)
 ### Jam -1
+![image](https://user-images.githubusercontent.com/60419316/77045157-3c6d8000-69f3-11ea-9bb6-f2b8351fffa1.png)
 
 
 ## Soal 2
