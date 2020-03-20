@@ -669,5 +669,15 @@ int main() {
 }
 ```
 ## Testing
-### Compile program
+### Compile Program
 ![image](https://user-images.githubusercontent.com/60419316/77169794-a9187580-6aec-11ea-938c-5814ff6b55a6.png)
+### Run Program
+![image](https://user-images.githubusercontent.com/60419316/77170360-863a9100-6aed-11ea-8956-8c1cade16ab3.png)  
+![image](https://user-images.githubusercontent.com/60419316/77170541-bf730100-6aed-11ea-92d8-e68ad478e04b.png)
+### Result
+![image](https://user-images.githubusercontent.com/60419316/77170705-ffd27f00-6aed-11ea-87f5-f61f678c65a2.png)  
+![image](https://user-images.githubusercontent.com/60419316/77170742-1082f500-6aee-11ea-8198-9d9d52eb04ba.png)
+![image](https://user-images.githubusercontent.com/60419316/77170790-242e5b80-6aee-11ea-8158-0b5d2cda652d.png)  
+![image](https://user-images.githubusercontent.com/60419316/77170854-390aef00-6aee-11ea-9f5d-23d6ceb2b8ac.png)  
+
+
