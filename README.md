@@ -145,7 +145,7 @@ Mendeklarasikan variabel `sk` dengan tipe data `time_t` dan diisi dengan nilai w
     jam_sk = sk_tm->tm_hour;
     printf("jam_sk: %d; menit: %d; detik: %d\n", jam_sk, menit_sk, detik_sk);
 ```
-Mendeklarasikan nilai dari `detik_sk`, `menit_sk`, dan `jam_sk` dengan waktu sistem pada struct `sk_tm`. Lalu diprint.
+Mendeklarasikan nilai dari `detik_sk`, `menit_sk`, dan `jam_sk` dengan waktu sistem pada struct `sk_tm`. Lalu diprint yang berguna untuk debugging.
 
 ```
     if((jam_sk == jam || jam == -1) && (menit_sk == menit || menit == -1) && (detik_sk == detik || detik == -1)){
