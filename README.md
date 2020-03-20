@@ -557,7 +557,7 @@ void unzip()
 
 int main() {
   // change current directory
-  chdir("/home/zenados/modul2");
+  chdir("/home/kaw/modul2");
   // make directory
   mkdirMieSedap();
   // unzip stuffs
@@ -571,7 +571,7 @@ int main() {
   struct dirent *de;  // Pointer for directory entry 
 
   // opendir() returns a pointer of DIR type.  
-  DIR *dr = opendir("/home/zenados/modul2/jpg"); 
+  DIR *dr = opendir("/home/kaw/modul2/jpg"); 
 
   if (dr == NULL)  // opendir returns NULL if couldn't open directory 
   { 
@@ -590,7 +590,7 @@ int main() {
     }
     printf("%s\n", de->d_name); 
     char path[100];
-    strcpy(path, "/home/zenados/modul2/jpg/");
+    strcpy(path, "/home/kaw/modul2/jpg/");
     strcat(path, de->d_name);
     // If path is file
     if (is_regular_file(path))
@@ -601,7 +601,7 @@ int main() {
       pid_t mover_pid = fork();
       if (mover_pid < 0) { exit(EXIT_FAILURE); } // There's an error, cancel
       if (mover_pid == 0) {
-        char *mvArg[] = {"mv", path, "/home/zenados/modul2/sedaap", NULL};
+        char *mvArg[] = {"mv", path, "/home/kaw/modul2/sedaap", NULL};
         execv("/bin/mv", mvArg);
       }
     // If path is directory
@@ -617,7 +617,7 @@ int main() {
         pid_t mover_pid = fork();
         if (mover_pid < 0) { exit(EXIT_FAILURE); } // There's an error, cancel
         if (mover_pid == 0) {
-          char *mvArgv[] = {"mv", path, "/home/zenados/modul2/indomie", NULL};
+          char *mvArgv[] = {"mv", path, "/home/kaw/modul2/indomie", NULL};
           execv("/bin/mv", mvArgv);
         } // End of mover child
         // get mover child sig
@@ -626,7 +626,7 @@ int main() {
         // Prepare touch path
         char touchPath[100];
         memset(touchPath, 0, sizeof(touchPath));
-        strcpy(touchPath, "/home/zenados/modul2/indomie/");
+        strcpy(touchPath, "/home/kaw/modul2/indomie/");
         strcat(touchPath, de->d_name);
         // touch file coba1.txt
         pid_t touch1_pid = fork();
