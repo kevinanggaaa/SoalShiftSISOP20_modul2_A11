@@ -695,7 +695,7 @@ Dari gambar di atas didapatkan bahwa directory `sedaap` dibuat 5 detik setelah d
 ![image](https://user-images.githubusercontent.com/60419316/77172688-f7c80e80-6af0-11ea-8efc-40078859b2d2.png)  
 ![image](https://user-images.githubusercontent.com/60419316/77172577-c18a8f00-6af0-11ea-8ba1-1858798afa40.png)  
 Gambar di atas menunjukkan waktu created file `coba1.txt`.  
-![image](https://user-images.githubusercontent.com/60419316/77172635-dd8e3080-6af0-11ea-8ac4-36884039ee31.png)
+![image](https://user-images.githubusercontent.com/60419316/77172635-dd8e3080-6af0-11ea-8ac4-36884039ee31.png)  
 Gambar di atas menunjukkan waktu created file `coba2.txt`.  
 Dari gambar di atas didapatkan bahwa file `coba2.txt` dibuat 3 detik setelah file `coba1.txt` dibuat.  
 
