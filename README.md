@@ -676,8 +676,16 @@ int main() {
 ![image](https://user-images.githubusercontent.com/60419316/77170541-bf730100-6aed-11ea-92d8-e68ad478e04b.png)
 ### Result
 ![image](https://user-images.githubusercontent.com/60419316/77170705-ffd27f00-6aed-11ea-87f5-f61f678c65a2.png)  
+Pada directory `modul2` terbentuk 3 directory yaitu, `indomie`, `sedaap`, dan `jpg`. `jpg` merupakan hasil dari ekstrak file dan tidak diperhatikan pada soal ini.  
 ![image](https://user-images.githubusercontent.com/60419316/77170742-1082f500-6aee-11ea-8198-9d9d52eb04ba.png)
+Pada directory `indomie` terdapat isi dari `jpg.zip` yang merupakan directory.  
 ![image](https://user-images.githubusercontent.com/60419316/77170790-242e5b80-6aee-11ea-8158-0b5d2cda652d.png)  
+Pada setiap directory pada `indomie` dibuat 2 file yang berisi `coba1.txt` dan `coba2.txt`.  
 ![image](https://user-images.githubusercontent.com/60419316/77170854-390aef00-6aee-11ea-9f5d-23d6ceb2b8ac.png)  
-
+Pada directory `sedaap` terdapat isi dari `jpg.zip` yang merupakan file.
+### Pembuktian Waktu 
+![image](https://user-images.githubusercontent.com/60419316/77171923-bd11a680-6aef-11ea-9514-e43b0b9af960.png)  
+Gambar di atas menunjukkan waktu created directory `indomie`.  
+![image](https://user-images.githubusercontent.com/60419316/77172061-f2b68f80-6aef-11ea-9275-e8fee6258a31.png)  
+Gambar di atas menunjukkan waktu created directory `sedaap`.
 
