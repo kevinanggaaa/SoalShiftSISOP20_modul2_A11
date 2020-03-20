@@ -115,7 +115,7 @@ Mengubah mode file agar mendapatkan akses penuh terhadap file yang dibuat oleh d
 Membuat Unique Session ID
 
 ```
-  if ((chdir("/home/zenados/Documents/2shift")) < 0) {
+  if ((chdir("/home/kaw/Documents/Pertemuan2/shift")) < 0) {
     exit(EXIT_FAILURE);
   }
 ```
