@@ -675,6 +675,7 @@ int main() {
 ![image](https://user-images.githubusercontent.com/60419316/77170360-863a9100-6aed-11ea-8956-8c1cade16ab3.png)  
 ![image](https://user-images.githubusercontent.com/60419316/77170541-bf730100-6aed-11ea-92d8-e68ad478e04b.png)
 ### Result
+![image](https://user-images.githubusercontent.com/60419316/77172757-19c19100-6af1-11ea-971f-abeb1cc94052.png)  
 ![image](https://user-images.githubusercontent.com/60419316/77170705-ffd27f00-6aed-11ea-87f5-f61f678c65a2.png)  
 Pada directory `modul2` terbentuk 3 directory yaitu, `indomie`, `sedaap`, dan `jpg`. `jpg` merupakan hasil dari ekstrak file dan tidak diperhatikan pada soal ini.  
 ![image](https://user-images.githubusercontent.com/60419316/77170742-1082f500-6aee-11ea-8198-9d9d52eb04ba.png)
@@ -684,8 +685,17 @@ Pada setiap directory pada `indomie` dibuat 2 file yang berisi `coba1.txt` dan `
 ![image](https://user-images.githubusercontent.com/60419316/77170854-390aef00-6aee-11ea-9f5d-23d6ceb2b8ac.png)  
 Pada directory `sedaap` terdapat isi dari `jpg.zip` yang merupakan file.
 ### Pembuktian Waktu 
+#### Waktu Pembuatan `indomie` dan `sedaap`
 ![image](https://user-images.githubusercontent.com/60419316/77171923-bd11a680-6aef-11ea-9514-e43b0b9af960.png)  
 Gambar di atas menunjukkan waktu created directory `indomie`.  
 ![image](https://user-images.githubusercontent.com/60419316/77172061-f2b68f80-6aef-11ea-9275-e8fee6258a31.png)  
-Gambar di atas menunjukkan waktu created directory `sedaap`.
+Gambar di atas menunjukkan waktu created directory `sedaap`.  
+Dari gambar di atas didapatkan bahwa directory `sedaap` dibuat 5 detik setelah directory `indomie` dibuat.  
+#### Waktu Pembuatan `coba1.txt` dan `coba2.txt`  
+![image](https://user-images.githubusercontent.com/60419316/77172688-f7c80e80-6af0-11ea-8efc-40078859b2d2.png)  
+![image](https://user-images.githubusercontent.com/60419316/77172577-c18a8f00-6af0-11ea-8ba1-1858798afa40.png)  
+Gambar di atas menunjukkan waktu created file `coba1.txt`.  
+![image](https://user-images.githubusercontent.com/60419316/77172635-dd8e3080-6af0-11ea-8ac4-36884039ee31.png)
+Gambar di atas menunjukkan waktu created file `coba2.txt`.  
+Dari gambar di atas didapatkan bahwa file `coba2.txt` dibuat 3 detik setelah file `coba1.txt` dibuat.  
 
