@@ -668,3 +668,6 @@ int main() {
   return 0; 
 }
 ```
+## Testing
+### Compile program
+![image](https://user-images.githubusercontent.com/60419316/77169794-a9187580-6aec-11ea-938c-5814ff6b55a6.png)
