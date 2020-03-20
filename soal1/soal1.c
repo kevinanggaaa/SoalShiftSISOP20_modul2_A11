@@ -81,7 +81,7 @@ int main(int argc,char *argv[]) {
     exit(EXIT_FAILURE);
   }
 
-  if ((chdir("/home/zenados/Documents/2shift")) < 0) {
+  if ((chdir("/home/kaw/Documents/Pertemuan2/shift")) < 0) {
     exit(EXIT_FAILURE);
   }
 
