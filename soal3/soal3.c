@@ -84,7 +84,7 @@ void unzip()
   // child process
   if (anak_id == 0)
   {
-    char *argUnzip[] = {"unzip", "jpg.zip", "-d", "jpg", NULL};
+    char *argUnzip[] = {"unzip", "jpg.zip", NULL};
     execv("/usr/bin/unzip", argUnzip);
   }
 }
