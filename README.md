@@ -453,7 +453,7 @@ int main(int argc, char *argv[]){
   }
 }
 ```
-Killer  
+Killer dari programnya 
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -494,6 +494,22 @@ int main()
   // delete exe self
 }
 ```
+## Testing
+### Menjalankan program -b dengan killernya  
+![image](https://user-images.githubusercontent.com/60419316/77218073-29c18b00-6b5a-11ea-9ba4-d5e62e80665a.png)  
+Dari gambar di atas, terlihat bahwa setelah program -b dikill program tetap berjalan sampai proses selesai.  
+![image](https://user-images.githubusercontent.com/60419316/77218102-82912380-6b5a-11ea-973f-5bc45a276bfc.png)  
+Dari gambar di atas, terbentuk file zip yang berisi gambar - gambar. Terlihat perbedaan waktu tiap file zip adalah 30 detik. 
+![image](https://user-images.githubusercontent.com/60419316/77218123-ac4a4a80-6b5a-11ea-8ec5-9bfe6c31e199.png)  
+Gambar di atas, terlihat waktu download tiap foto berbeda 5 detik.  
+### Menjalankan program -a dengan killernya
+![image](https://user-images.githubusercontent.com/60419316/77218417-b6217d00-6b5d-11ea-9d40-2827d2f3e660.png)
+Menjalankan program -a yang menghasilkan 2 file.
+![image](https://user-images.githubusercontent.com/60419316/77218441-eff28380-6b5d-11ea-9479-29010c80716e.png)  
+Terlihat perbedaan waktu 30 detik antar file.  
+![image](https://user-images.githubusercontent.com/60419316/77218462-16b0ba00-6b5e-11ea-93dc-1aff87d42e7a.png)  
+Terlihat perbedaan waktu antar foto sebanyak 5 detik dan belum 20 foto terdownload tetapi program telah berhenti.
+
 
 ## Soal 3
 Jaya adalah seorang programmer handal mahasiswa informatika. Suatu hari dia memperoleh tugas yang banyak dan berbeda tetapi harus dikerjakan secara bersamaan (multiprocessing).
