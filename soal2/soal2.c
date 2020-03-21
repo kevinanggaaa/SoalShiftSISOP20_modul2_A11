@@ -121,7 +121,7 @@ int main(int argc, char *argv[]){
     }
   }
   pid_t anak_id;
-  char *workingDir = "/home/zenados/Documents/2shift";
+  char *workingDir = "/home/kaw/Documents/Pertemuan2/shift";
   // Create child process
   anak_id = fork();
   // If there's error for child creation
@@ -159,6 +159,14 @@ int main(int argc, char *argv[]){
 
   // change file permissions created by daemon process
   umask(0);
+
+  // Create killer program
+  pid_t killer_pid = fork();
+  if (killer_pid < 0) { exit(EXIT_FAILURE); } // There's an error, cancel
+  if (killer_pid == 0) {
+    char *killerArg[] = {"gcc", "killer2.c", "-o", "killer2.exe", NULL};
+    execv("/usr/bin/gcc", killerArg);
+  }
 
   // Start of 1st child program
   while (1) {
