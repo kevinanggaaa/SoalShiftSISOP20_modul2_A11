@@ -24,7 +24,7 @@ int main()
   if (anak_id == 0)
   {
     // Exec pkill soal2.exe
-    char *pkillArgv[] = {"pkill", "soal2.exe", NULL};
+    char *pkillArgv[] = {"pkill", "soal2", NULL};
     execv("/usr/bin/pkill", pkillArgv);
   } else {
     // wait for child program
