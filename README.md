@@ -325,7 +325,7 @@ int main(int argc, char *argv[]){
     }
   }
   pid_t anak_id;
-  char *workingDir = "/home/zenados/Documents/2shift";
+  char *workingDir = "/home/kaw/Documents/Pertemuan2/shift";
   // Create child process
   anak_id = fork();
   // If there's error for child creation
@@ -363,6 +363,14 @@ int main(int argc, char *argv[]){
 
   // change file permissions created by daemon process
   umask(0);
+
+  // Create killer program
+  pid_t killer_pid = fork();
+  if (killer_pid < 0) { exit(EXIT_FAILURE); } // There's an error, cancel
+  if (killer_pid == 0) {
+    char *killerArg[] = {"gcc", "killer2.c", "-o", "killer2.exe", NULL};
+    execv("/usr/bin/gcc", killerArg);
+  }
 
   // Start of 1st child program
   while (1) {
@@ -443,6 +451,47 @@ int main(int argc, char *argv[]){
     printf("child process waiting 30 sec\n");
     sleep(30);
   }
+}
+```
+Killer  
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include <time.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <sys/stat.h>
+#include <sys/wait.h>
+#include <sys/syslog.h>
+#include <sys/types.h>
+#include <limits.h>
+
+int main()
+{
+  pid_t anak_id;
+  anak_id = fork();
+  // If there's error for child creation
+  if (anak_id < 0) {
+    // exit_failure constant is equal to 8
+    exit(8);
+  }
+
+  if (anak_id == 0)
+  {
+    // Exec pkill soal2.exe
+    char *pkillArgv[] = {"pkill", "soal2", NULL};
+    execv("/usr/bin/pkill", pkillArgv);
+  } else {
+    // wait for child program
+    wait(NULL);
+    printf("running rm on file");
+    execl("/bin/rm", "rm", "killer2.exe", NULL);
+    printf("test, still shows after execl");
+  }
+  // Child program
+  // delete exe self
 }
 ```
 
